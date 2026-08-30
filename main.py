@@ -37,10 +37,12 @@ while True:
     # lets the user view the tasks written
     if menu == "View task":
         task_list = db.get_all_tasks()
-        print(f"DEBUG: found {len(task_list)} tasks")
-        for position, task in enumerate(task_list, start=1):
-            print(f"Task {position}")
-            task.display_info()
+        if len(task_list) == 0:
+            print("No tasks found.")
+        else:
+            print(task_list[0].header_row())
+            for task in task_list:
+                print(task.to_row())
         
 
     # marks tasks complete once done

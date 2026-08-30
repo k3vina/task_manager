@@ -17,6 +17,11 @@ class Task:
         print(f"Date: {self.due_date}")
         print(f"Completed: {self.completed}")
 
+    def to_row(self):
+        return f"{self.id:^10}, {self.title:<20}, {self.description:<50}, {self.due_date:^15}, {self.completed:^10}"
+
+    def header_row(self):
+        return f'{"Id":^10}, {"Title":<20}, {"Description":<50}, {"Date":^15}, {"Completed":^10}'
 
 if __name__ == "__main__":
     my_task = Task("1", "To-Do List", "Today's activities", date(2026, 8, 29), "Not Yet")
