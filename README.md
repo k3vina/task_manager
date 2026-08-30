@@ -13,13 +13,13 @@ principles and SQLite for persistent storage.
 
 ## Project Structure
 
-\```
+```
 task_manager/
 ├── task.py        # Task class — represents a single task
 ├── database.py     # TaskDatabase class — handles all SQLite CRUD operations
 ├── main.py         # CLI entry point — menu loop tying everything together
 └── tasks.db        # SQLite database file (created automatically on first run)
-\```
+```
 
 ## Requirements
 
@@ -29,19 +29,19 @@ task_manager/
 
 ## How to Run
 
-\```bash
+```bash
 python main.py
-\```
+```
 
 You'll see a menu with the following options:
 
-\```
+```
 Add task
 View task
 Mark complete
 Delete
 Exit
-\```
+```
 
 Type an option exactly as shown to select it.
 
