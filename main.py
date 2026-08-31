@@ -31,7 +31,8 @@ while True:
         description = input("Enter the description: ")
         due_date = input("Enter the due date: ")
         completed = 0
-        task = Task(id, title, description, due_date, completed)
+        priority = input("How important is it(High/Medium/Low)? ")
+        task = Task(id, title, description, due_date, completed, priority)
         db.add_task(task)
 
     # lets the user view the tasks written
