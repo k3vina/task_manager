@@ -25,7 +25,7 @@ task_manager/
 
 - Python 3.x
 - No external packages required — uses only the standard library
-  (`sqlite3`, `os`, `datetime`)
+  (`sqlite3`, `datetime`)
 
 ## How to Run
 
