@@ -9,6 +9,7 @@ principles and SQLite for persistent storage.
 - View all tasks in a clean, aligned table format
 - Mark tasks as complete
 - Delete tasks
+- Asks user to enter the priority of the task
 - Tasks persist across runs using an SQLite database (`tasks.db`)
 
 ## Project Structure
@@ -26,6 +27,13 @@ task_manager/
 - Python 3.x
 - No external packages required — uses only the standard library
   (`sqlite3`, `datetime`)
+
+## Installation
+Clone this repository:
+```bash
+git clone https://github.com/k3vina/task_manager
+dc task_manager
+```
 
 ## How to Run
 
@@ -51,7 +59,7 @@ Type an option exactly as shown to select it.
 generated automatically.
 
 **View task** — displays all saved tasks in a table with columns for ID,
-Title, Description, Due Date, and Completed status.
+Title, Description, Due Date, Completed status, and Priority.
 
 **Mark complete** — prompts for a task's ID and marks it as completed (`1`).
 
@@ -78,6 +86,5 @@ Title, Description, Due Date, and Completed status.
 
 ## Possible Extensions
 
-- Task priorities (High / Medium / Low) with sorting
 - Category filtering
 - Export task list to CSV
