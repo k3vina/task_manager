@@ -2,7 +2,7 @@ from database import TaskDatabase
 from task import Task
 import sqlite3
 from datetime import date
-import os
+#import os
 
 # connects the CLI interface to the database
 connection = sqlite3.connect("tasks.db")
